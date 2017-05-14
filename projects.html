@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Viewports -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Desc. -->
+    <title>Project - LT CodeLab</title>
+    <meta name="description" content="The Lane Tech CodeLab is an organization of developers who make stuff!">
+    <meta name="author" content="LTCodeLab">
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <style>
+      .carousel .item {
+        width: 100%;
+      }
+
+      .slider-item {
+        width: 100%;
+        height: 375px;
+        max-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .slider-item-header {
+        margin-top: 0;
+        padding-top: 140px;
+        text-align: center;
+        color: white;
+      }
+
+      .slider-item-desc {
+        margin-top: 0;
+        text-align: center;
+        color: white;
+      }
+
+      @media screen and (max-width: 769px) {
+        .slider-item {
+          background-position: 50% 50%;
+        }
+      }
+
+      .carousel-control.right,
+      .carousel-control.left {
+        background-image: none;
+      }
+
+      .carousel-indicators li {
+        -webkit-transition: background-color 1s ease;
+        -moz-transition: background-color 1s ease;
+        -o-transition: background-color 1s ease;
+        transition: background-color 1s ease;
+        border-radius: 0;
+      }
+
+      .project_tile {
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+        opacity: 1;
+        margin-top: 30px;
+      }
+
+      .project_title {
+        padding-left: 10px;
+        color: white;
+        width: 100%;
+        position: relative;
+        bottom: 44px;
+        background-color: rgba(0, 0, 0, 0.50);
+        font-size: 24px;
+      }
+
+      .project_tile_wrapper {
+        background-color: black;
+        width: 300px;
+        height: inherit;
+      }
+
+      .project_tile:hover {
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+        opacity: 0.5;
+      }
+
+      .btn-z {
+        background-color: #ff3e3e;
+        color: white;
+      }
+
+      .btn-z:hover {
+        background-color: #ec3939 !important;
+        color: white;
+      }
+
+      .btn-z:active {
+        background-color: #ec3939 !important;
+      }
+
+      .btn-z:focus {
+        background-color: #ff3e3e;
+      }
+
+      .modal-content {
+        box-shadow: none;
+      }
+
+      .modal-backdrop.in {
+        opacity: 1;
+        background-color: white;
+      }
+    </style>
+    <!-- OpenGraph -->
+    <meta property="og:url" content="https://2501codelab.github.io/student/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LT CodeLab">
+    <meta property="og:description" content="The Lane Tech CodeLab is an organization of developers who make stuff!">
+    <!--<meta property="og:image" content="https://2501codelab.github.io/lost-and-found/assets/media/fb_bk.png">-->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <!--<meta name="twitter:site" content="@LTCodelab" />-->
+    <meta name="twitter:creator" content="@Zyplos" />
+    <!-- Mobile -->
+    <meta name="theme-color" content="#2196F3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Favicons -->
+  </head>
+
+  <body>
+    <!-- Modalspace -->
+    <div class="modal fade" id="project_one">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Lane Tech NEO</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>Lane Tech NEO is Lane Tech's new redesigned website which is fully responsive.</p> <br> </div>
+          <div class="modal-footer"> <button class="btn btn-primary btn-z" data-dismiss="modal">Close</button> </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="portfolio">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Portfolio</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>Welcome to our portfolio! We put up our projects in development here, along with a description, a link to the project's site, and the list of dependencies for that project.</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/" class="btn btn-default btn-z" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/2501codelab.github.io" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="lt_student">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">LT Student</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>The LT Student App is a portal to resources tailored specifically to Lane Tech students. You can find various sources of info, such as the school calendar, which will appear compact on your phone. You can also check here to see if there are
+              any special bell schedules for today. It even connects to Lane Tech's database to gather information like the amount of demerits you have, or even see your grades from previous grade levels.</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+            <p>Bootstrap Calendar - <a href="https://github.com/Serhioromano/bootstrap-calendar" target="_blank">Github</a></p>
+            <p>Google's Authentication/Calendar/Blogger API</p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/student/" class="btn btn-default btn-z" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/student" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="lost_and_found">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Lost &amp; Found</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>The LT Lost &amp; Found app is a community-driven app that helps students find and report items found around Lane Tech. Take a picture and create a post on the thing you've found, and people can visit the site to check if their lost item has
+              been found by someone.</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+            <p>Firebase - <a href="https://firebase.google.com/" target="_blank">Site</a></p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/lost-and-found/" class="btn btn-default btn-z" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/lost-and-found" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="ltmakers_catalog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">LT Makers Catalog</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>The LT Makers Catalog is an online showcase of products and things that Lane Tech's Maker Lab makes. You can browse and fill out an ordering form to buy your item. Bought items go towards supporting Lane's Computer Science Department. (you should check it out, there's a lot of cool stuff there!)</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+            <p>Google Scripts - <a href="https://developers.google.com/apps-script/" target="_blank">Site</a></p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/ltmaker-catalog/" class="btn btn-default btn-z" target="_blank">Visit Site</a> <a href="https://2501codelab.github.io/ltmaker-catalog/" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="cheminventory">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">ChemInventory</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>ChemInventory is an app for internal use by Lane's Science Department. Teachers can catalog items and other teachers can check the availability of that item.</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+            <p>Google Scripts - <a href="https://developers.google.com/apps-script/" target="_blank">Site</a></p>
+            <p>Google's Authentication API</p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/chemInventory/" class="btn btn-default btn-z disabled" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/chemInventory" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="zyDisplay">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">zyDisplay</h2> </div>
+          <div class="modal-body">
+            <h4>About</h4>
+            <p>zyDisplay is a simple webapp built to help manage displays around Lane Tech. Open it in a browser, and change the webpage displayed in the window remotely.</p>
+            <h4>Dependencies</h4>
+            <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+            <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+            <p>Firebase - <a href="https://firebase.google.com/" target="_blank">Site</a></p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/zydisplay/" class="btn btn-default btn-z" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/zydisplay" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="modal fade" id="quizapp">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">QuizApp</h2> </div>
+            <div class="modal-body">
+              <h4>About</h4>
+              <p>QuizApp is another webapp for internal use by Lane's Science Department, specifically for chemistry classes. It's a study tool relating to elements, and soon other topics.</p>
+              <h4>Dependencies</h4>
+              <p>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">Site</a></p>
+              <p>JQuery - <a href="https://jquery.com/" target="_blank">Site</a></p>
+              <p>Google Scripts - <a href="https://developers.google.com/apps-script/" target="_blank">Site</a></p>
+              <p>Google's Authentication API</p> <br> </div>
+          <div class="modal-footer">
+            <div class="btn-group btn-group-justified center-block"> <a href="/quiz-app/" class="btn btn-default btn-z disabled" target="_blank">Visit Site</a> <a href="https://github.com/2501CodeLab/quiz-app" class="btn btn-primary" target="_blank">Github</a> <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <!-- --><img src="assets/media/main_logo.svg" id="navbar-image-main" />
+            <!-- -->
+          </a> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> </div>
+        <div class="collapse navbar-collapse" id="mobile-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="/">
+                                Home
+                            </a> </li>
+            <li> <a href="projects.html">
+                                Projects
+                            </a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- use later <div id="projectSlider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#projectSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#projectSlider" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div style="background-image: url(assets/media/p_slider_1.png);" class="slider-item">
+            <h1 class="slider-item-header">LT Student</h1>
+            <p class="slider-item-desc">One stop hub for Lane Tech students.<br><br><a class="btn btn-primary btn-sm" onclick="$('#lt_student').modal('show')">View Project</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div style="background-image: url(assets/media/p_slider_137.png);" class="slider-item">
+            <h1 class="slider-item-header">Lane Tech NEO</h1>
+            <p class="slider-item-desc">A redesign of Lane Tech's site.</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#projectSlider" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+      <a class="right carousel-control" href="#projectSlider" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+    </div> -->
+    <div class="container">
+      <h1 class="text-center">Projects</h1>
+      <div class="row">
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#lt_student" href="#" class="project_tile_wrapper"> <img src="assets/media/student_logo_indev.png" alt="LT Student" class="project_tile img-responsive center-block" />
+            <p class="project_title">LT Student</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#lost_and_found" href="#" class="project_tile_wrapper"> <img src="assets/media/l&f_logo.png" alt="LT Codelab Site" class="project_tile img-responsive center-block" />
+            <p class="project_title">Lost &amp; Found</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#ltmakers_catalog" href="#" class="project_tile_wrapper"> <img src="assets/media/ltmakers_logo.png" alt="LT Lost & Found" class="project_tile img-responsive center-block" />
+            <p class="project_title">LT Makers Catalog</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#cheminventory" href="#" class="project_tile_wrapper"> <img src="assets/media/default_logo.png" alt="ChemInventory" class="project_tile img-responsive center-block" />
+            <p class="project_title">ChemInventory</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#portfolio" href="#" class="project_tile_wrapper"> <img src="assets/media/default_logo.png" alt="Porfolio" class="project_tile img-responsive center-block" />
+            <p class="project_title">Porfolio</p>
+          </a>
+        </div>
+
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#zyDisplay" href="#" class="project_tile_wrapper"> <img src="assets/media/default_logo.png" alt="zyDisplay" class="project_tile img-responsive center-block" />
+            <p class="project_title">zyDisplay</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="col-xs-12 col-md-4">
+          <a data-toggle="modal" data-target="#quizapp" href="#" class="project_tile_wrapper"> <img src="assets/media/default_logo.png" alt="QuizApp" class="project_tile img-responsive center-block" />
+            <p class="project_title">QuizApp</p>
+          </a>
+        </div>
+        <!-- -->
+      </div>
+    </div>
+    <footer>
+      <div class="footer-bottom">
+        <div class="container">
+          <div style="padding-top: 30px" class="pull-left">
+            <p>Made by LTCodelab <span style="font-family: monospace; color:#ffde00;">&lt;/&gt;</span> 2017</p>
+          </div>
+          <div style="padding-top: 20px" class="pull-right"> <img src="assets/media/zyplos_logo.svg" style="height: 45px" /> </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+  </body>
+
+</html>

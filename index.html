@@ -19,7 +19,7 @@
       #main_header {
         color: #ffde00;
         background-color: #2196F3;
-        height: 500px;
+        height: 375px;
         text-align: center;
         display: -webkit-box;
         display: -moz-box;
@@ -47,27 +47,166 @@
         align-items: center;
       }
 
-      .main_header_scroll {
-        top: 510px;
-        position: absolute;
-        z-index: 30;
-        background: none;
-        border: none;
+
+
+
+
+
+    </style>
+    <style>
+      #zysecret {
+        fill: white;
       }
 
-      .material-icons {
-        font-size: 50px;
+      #zysecret:hover {
+        -webkit-animation: rainbow 2s infinite;
+        -ms-animation: rainbow 2s infinite;
+        -o-animation: rainbow 2s infinite;
+        animation: rainbow 2s infinite;
       }
 
-      @keyframes pulse {
-        to {
-          transform: scale(1.8);
-          opacity: 0;
+      @-webkit-keyframes rainbow {
+        0% {
+          fill: #ff0000;
+        }
+        10% {
+          fill: #E2571E;
+        }
+        20% {
+          fill: #FF7F00;
+        }
+        30% {
+          fill: #E5E520;
+        }
+        40% {
+          fill: #0EDB0E;
+        }
+        50% {
+          fill: #96bf33;
+        }
+        60% {
+          fill: #0000FF;
+        }
+        70% {
+          fill: #4B0082;
+        }
+        80% {
+          fill: #8B00FF;
+        }
+        90% {
+          fill: #F000FF;
+        }
+        100% {
+          fill: #FF007E;
         }
       }
 
-      #main_header_scroll_pulse {
-        animation: pulse 1500ms infinite;
+      @-ms-keyframes rainbow {
+        0% {
+          fill: #ff0000;
+        }
+        10% {
+          fill: #E2571E;
+        }
+        20% {
+          fill: #FF7F00;
+        }
+        30% {
+          fill: #E5E520;
+        }
+        40% {
+          fill: #0EDB0E;
+        }
+        50% {
+          fill: #96bf33;
+        }
+        60% {
+          fill: #0000FF;
+        }
+        70% {
+          fill: #4B0082;
+        }
+        80% {
+          fill: #8B00FF;
+        }
+        90% {
+          fill: #F000FF;
+        }
+        100% {
+          fill: #FF007E;
+        }
+      }
+
+      @-o-keyframes rainbow {
+        0% {
+          fill: #ff0000;
+        }
+        10% {
+          fill: #E2571E;
+        }
+        20% {
+          fill: #FF7F00;
+        }
+        30% {
+          fill: #E5E520;
+        }
+        40% {
+          fill: #0EDB0E;
+        }
+        50% {
+          fill: #96bf33;
+        }
+        60% {
+          fill: #0000FF;
+        }
+        70% {
+          fill: #4B0082;
+        }
+        80% {
+          fill: #8B00FF;
+        }
+        90% {
+          fill: #F000FF;
+        }
+        100% {
+          fill: #FF007E;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          fill: #ff0000;
+        }
+        10% {
+          fill: #E2571E;
+        }
+        20% {
+          fill: #FF7F00;
+        }
+        30% {
+          fill: #E5E520;
+        }
+        40% {
+          fill: #0EDB0E;
+        }
+        50% {
+          fill: #96bf33;
+        }
+        60% {
+          fill: #0000FF;
+        }
+        70% {
+          fill: #4B0082;
+        }
+        80% {
+          fill: #8B00FF;
+        }
+        90% {
+          fill: #F000FF;
+        }
+        100% {
+          fill: #FF007E;
+        }
       }
     </style>
     <!-- OpenGraph -->
@@ -88,7 +227,6 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -119,7 +257,7 @@
         <h1 style="color:#ffde00;">Welcome.</h1>
         <p>to the CodeLab!</p>
         <p>Explore some stuff we've done!</p>
-      </div> <button class="main_header_scroll" id="main_header_scroll_pulse"><i class="material-icons">arrow_downward</i></button> <button class="main_header_scroll"><i class="material-icons">arrow_downward</i></button> </div>
+      </div>  </div>
     <div class="container">
       <div class="row">
         <div class="project_panel">
@@ -163,7 +301,7 @@
               <div class="col-xs-12"> <img src="assets/media/student_logo_indev.png" alt="LT Student Logo" class="img-responsive img-rounded center-block" /> </div>
               <div class="col-xs-12 text-center">
                 <p>The LT Student App is a portal to resources tailored specifically to Lane Tech students.</p>
-                <p> <a class="btn btn-primary" href="http://lanetech.org" target="_blank">
+                <p> <a class="btn btn-primary" href="/student/" target="_blank">
                                         Visit Site
                                     </a> </p>
               </div>
@@ -183,7 +321,8 @@
           <div style="padding-top: 30px" class="pull-left">
             <p>Made by LTCodelab <span style="font-family: monospace; color:#ffde00;">&lt;/&gt;</span> 2017</p>
           </div>
-          <div style="padding-top: 20px" class="pull-right"> <img src="assets/media/zyplos_logo.svg" style="height: 45px" /> </div>
+          <div style="padding-top: 20px" class="pull-right"> <svg style="height: 45px" xmlns="http://www.w3.org/2000/svg" id="zysecret" data-name="Zyplos" viewBox="0 0 78.9 42.6"><title>Zyplos</title><polygon points="1.7 1 48.2 14.4 50.2 16.4 48.2 18.4 29.2 21 67.2 33.1 76.7 41.4 18.9 22.2 16.7 19.9 18.8 17.8 39.2 15.4 5.2 4.6 1.7 1" /></svg>
+ </div>
         </div>
       </div>
     </footer>
@@ -199,12 +338,7 @@
       console.log('%c All of our projects\' code is usually there.', 'color: #ff3e3e;');
       console.log('%c Found a bug? Broke something? Got an error? Report it to us!', 'color: #ff3e3e;');
       console.log('%c --------------------------------------', 'color: #ff3e3e;');
-      //
-      $(".main_header_scroll").click(function() {
-        $('html, body').animate({
-          scrollTop: $("#main_header").outerHeight()
-        }, 500);
-      });
+
     </script>
   </body>
 
