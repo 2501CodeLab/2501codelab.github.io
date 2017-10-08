@@ -16,70 +16,6 @@
   <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
   <style>
-    #main_header {
-      color: #fff;
-      background-color: #31343f;
-      height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 30px 10% 64px 10%;
-      margin-bottom: 30px;
-    }
-
-    #main_header h1,
-    #main_header h5 {
-      color: #fff;
-      font-weight: lighter;
-      opacity: 0;
-    }
-
-    @media(max-width:767px) {
-      #main_header h1 {
-        font-size: 14px;
-      }
-    }
-
-    .project_panel {
-      margin-top: 30px;
-    }
-
-    #secondary_header {
-      background-color: #EBEBEB;
-      height: 300px;
-      text-align: center;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #codelab_logo_caption {
-      width: 100%;
-      padding-right: 50%;
-    }
-
-    #codelab_logo {
-      width: 100%;
-    }
-
-    #header_down_arrow {
-      height: 30px;
-    }
-
     #main {
       height: 100%;
       display: -webkit-box;
@@ -95,16 +31,15 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 30px 10% 64px 10%;
-      margin-bottom: 30px;
+      padding: 0px 10% 64px 10%;
+      margin-bottom: 0px;
     }
   </style>
   <!-- OpenGraph -->
-  <meta property="og:url" content="https://2501codelab.github.io/student/">
+  <meta property="og:url" content="https://2501codelab.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Lane Tech CodeLab">
   <meta property="og:description" content="An organization of developers for the betterment of the community.">
-  <!--<meta property="og:image" content="https://2501codelab.github.io/lost-and-found/assets/media/fb_bk.png">-->
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@LTCodelab" />
@@ -134,41 +69,12 @@
     <p class="text-muted">You can still find our old organization <a href="https://github.com/2501CodeLab">here</a>.</p>
 
   </div>
-  <br>
-  <footer>
-    <div class="footer-bottom">
-      <div class="container">
-        <div style="padding-top: 30px" class="pull-left">
-          <p>LTCodeLab <span style="font-family: monospace; color:#ffde00;">&lt;/&gt;</span> 2017</p>
-        </div>
-        <div style="padding-top: 20px" class="pull-right">
-          <svg style="height: 45px; fill: #fff" xmlns="http://www.w3.org/2000/svg" data-name="Zyplos" viewBox="0 0 78.9 42.6">
-            <title>Zyplos</title>
-            <polygon points="1.7 1 48.2 14.4 50.2 16.4 48.2 18.4 29.2 21 67.2 33.1 76.7 41.4 18.9 22.2 16.7 19.9 18.8 17.8 39.2 15.4 5.2 4.6 1.7 1"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
-  <script>
-    console.log('%c --------------------------------------', 'color: #ff3e3e;');
-    console.log('%c rude', 'color: #ff3e3e;');
-    console.log('%c ', 'color: #ff3e3e;');
-    console.log('%c snooping around the console like that', 'color: #ff3e3e;');
-    console.log('%c Just kidding.', 'color: #ff3e3e;');
-    console.log(
-      '%c That\'s okay, if anything, we encourage it! Check out our Github at: https://github.com/LTCodeLab/',
-      'color: #ff3e3e;');
-    console.log('%c All of our projects\' code is usually there.', 'color: #ff3e3e;');
-    console.log('%c Found a bug? Broke something? Got an error? Report it to us!', 'color: #ff3e3e;');
-    console.log('%c --------------------------------------', 'color: #ff3e3e;');
-  </script>
   <script>
     function logoCaptionDrawDone() {
       cl_logo_anim.play();
